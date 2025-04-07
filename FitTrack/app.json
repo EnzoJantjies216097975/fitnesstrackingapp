@@ -1,0 +1,44 @@
+{
+  "expo": {
+    "name": "FitTrack",
+    "slug": "FitTrack",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "newArchEnabled": true,
+    "splash": {
+      "image": "./assets/splash-icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.yourcompany.fittrack",
+      "buildNumber": "1.0.0",
+      "infoPlist": {
+        "NSBluetoothAlwaysUsageDescription": "This app uses Bluetooth to connect to your fitness watch",
+        "UIBackgroundModes": ["bluetooth-central"]
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      },
+      "package": "com.yourcompany.fittrack",
+      "versionCode": 1,
+      "permissions": ["BLUETOOTH", "BLUETOOTH_ADMIN", "ACCESS_FINE_LOCATION"]
+
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    }
+  }
+}
+}
